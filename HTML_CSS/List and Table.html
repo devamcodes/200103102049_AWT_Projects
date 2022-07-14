@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Table & List</title>
+    <style>
+        li:nth-child(even){
+            color: red;
+        };
+        tr{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Unorder list</h3>
+    <ul type="circle">
+        <li>First unorder line</li>
+        <li>Second unorder line</li>
+        <li>Third unorder line</ii>
+            <ul class="Devam">
+                <li>Sub line 1</li>
+                <li>Sub line 2</li>
+                <li>Sub line 3</li>
+                <li>Sub line 4</li>
+            </ul>
+        <li>Forth unorder line</li>
+    </ul>
+    <h3>Order list</h3>
+    <ol type="I">
+        <li>First order line</li>
+        <li>Second order line</li>
+        <ol type="i" class="Devam">
+            <li>Sub line 1</li>
+            <li>Sub line 2</li>
+            <li>Sub line 3</li>
+        </ol>
+        <li>Third order line</li>
+        <li>Forth order line</li>
+    </ol>
+    <h3>Definition list</h3>
+    <dl>
+        <dt>Title</dt>
+        <dd>Definition</dd>
+        <dt>Title</dt>
+        <dd>Definition </dd>
+    </dl>
+    <h3>HTML Table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>language</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Devam</td>
+                <td>123</td>
+                <td>ReactJS</td>
+            </tr>
+            <tr>
+                <td>Devam</td>
+                <td>123</td>
+                <td>Python</td>
+            </tr>
+            <tr>
+                <td>Devam</td>
+                <td>123</td>
+                <td>HTML</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>

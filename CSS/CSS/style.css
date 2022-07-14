@@ -1,0 +1,15 @@
+/* CSS style for cssType+Animation.html  */
+.ext {
+	height: 100px;
+	width: 25%;
+	text-align: center;
+	font-size: xx-large;
+	font-weight: 900;
+	background-color: rgb(109, 195, 248);
+	box-sizing: border-box;
+	padding: 30px;
+	margin-left: 35%;
+	border: 4px red solid;
+	border-radius: 20px;
+	box-shadow: 2px 4px 4px black;
+}

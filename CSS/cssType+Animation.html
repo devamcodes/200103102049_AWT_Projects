@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Type | Animation</title>
+		<link rel="stylesheet" href="CSS/style.css" />
+
+		<!--  Inline Style  -->
+		<style>
+			.int {
+				font-size: larger;
+				font-weight: 700;
+				text-align: center;
+				border-radius: 5px;
+				padding: 15px;
+				background-color: rgb(182, 255, 127);
+			}
+
+			/* Animation*/
+			.box {
+				margin-left: 35%;
+				border-radius: 10px;
+				height: 100px;
+				width: 100px;
+				animation-name: anm;
+				animation-duration: 5s;
+				animation-timing-function: ease-in-out;
+				animation-iteration-count: infinite;
+				position: relative;
+				box-shadow: 4px 4px 4px black;
+			}
+			@keyframes anm {
+				0% {
+					top: 0;
+					left: 0;
+					background-color: rgb(241, 56, 56);
+					transform: rotate(0deg);
+				}
+				25% {
+					top: 0;
+					left: 250px;
+					background-color: rgb(147, 0, 0);
+					transform: rotate(90deg);
+				}
+				50% {
+					top: 200px;
+					left: 0px;
+					background-color: rgb(3, 3, 194);
+					transform: rotate(180deg);
+				}
+				75% {
+					top: 200px;
+					left: 250px;
+					background-color: rgb(57, 57, 57);
+					transform: rotate(270deg);
+				}
+				100% {
+					top: 0;
+					left: 0;
+					background-color: rgb(111, 255, 0);
+					transform: rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div
+			style="
+				background-color: rgb(0, 155, 155);
+				border-radius: 5px;
+				text-align: center;
+				font-weight: 600;
+				font-size: large;
+				padding-left: 15px;
+			"
+		>
+			Inline CSS
+		</div>
+
+		<hr />
+
+		<div class="int">Internal CSS</div>
+
+		<hr />
+
+		<div class="ext">External CSS</div>
+
+		<hr />
+		<br />
+
+		<div class="box"></div>
+	</body>
+</html>
